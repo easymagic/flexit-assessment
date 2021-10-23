@@ -7,7 +7,7 @@ export const PhotoFeeds = ()=>{
 
     return (<>
     <div className="flex flex-wrap">
-        {photos.map((item)=>(<PhotoCard src={item.urls.thumb} />))}
+        {photos.map((item)=>(<PhotoCard name={item.user.name} location={item.user.location} src={item.user.profile_image.large} />))}
     </div>
     </>);
 }
