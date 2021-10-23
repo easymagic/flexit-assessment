@@ -1,5 +1,9 @@
+import { useContext } from 'react';
 import searchIcon from '../search.svg';
+import { BaseContext } from './BaseContext';
 export const SearchBar = ()=>{
+
+    const {searchText,setSearchText} = useContext(BaseContext);
 
     return (<>
     <div className="flex w-4/6">
@@ -13,7 +17,7 @@ export const SearchBar = ()=>{
      
      </div>
 
-     <input placeholder="Find Something..." className="ml-7 outline-none w-5/6" />
+     <input value={searchText} onChange={(e)=>setSearchText(e.target.value)} placeholder="Find Something..." className="ml-7 outline-none w-5/6" />
 
      <button className="bg-purple-800 text-white px-3 py-1 rounded shadow">
          Search
