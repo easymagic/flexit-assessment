@@ -12,7 +12,7 @@ export const Layout = ({children})=>{
 
     return (<>
     
-    <div className="bg-gray-100 h-screen text-xs">
+    <div className="bg-gray-100 h-auto text-xs">
       <div className="container flex mx-auto">
         {/* left side bar */}
         <LeftSideBar />
