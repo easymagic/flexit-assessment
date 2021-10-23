@@ -1,8 +1,8 @@
 export const SecondRow = ({children})=>{
 
     return (<>
-    <div className="w-full">
-    {children}
+    <div className="w-full ml-9">
+      {children}
     </div>
     </>);
 }
