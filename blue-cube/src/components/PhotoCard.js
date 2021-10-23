@@ -18,17 +18,17 @@ export const PhotoCard = ({src,name,location})=>{
                   {name}  
                </div>
                <div className="flex flex-row mb-1">
-                  <div className="text-gray-300">
+                  <div className="text-gray-300 mr-1">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
 </svg>
                   </div>
-                  <div>
+                  <div className="break-normal truncate overflow-ellipsis">
                   {location == null? 'Global' : location}
                   </div>
                    
                </div>
-               <div className="grid grid-cols-2 text-xl">
+               <div className="grid grid-cols-2 text-xl" >
                    <button className="bg-red-600 text-white mr-1 px-5 rounded">
                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
